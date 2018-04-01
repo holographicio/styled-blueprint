@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": false,
+    "baseUrl": ".",
+    "forceConsistentCasingInFileNames": true,
+    "jsx": "react",
+    "lib": ["es6", "dom", "es7"],
+    "module": "es6",
+    "moduleResolution": "node",
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "outDir": "build",
+    "paths": {
+      "@": ["./"],
+      "@/*": ["./*"]
+    },
+    "preserveConstEnums": true,
+    "removeComments": false,
+    "rootDir": ".",
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "target": "esnext",
+    "typeRoots": ["./node_modules/@types", "src"],
+    "types": ["node"]
+  },
+  "include": ["src"]
+}
