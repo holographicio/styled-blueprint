@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Button from './';
+import Toast from './';
 import { storiesOf } from '@storybook/react';
 
-storiesOf('Button', module).add('default', () => <Button>Click Me</Button>);
+storiesOf('Toast', module).add('default', () => <Toast message="Test" />);

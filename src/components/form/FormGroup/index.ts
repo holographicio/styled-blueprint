@@ -8,7 +8,7 @@ import {
   successColor,
   textColor,
   warningColor,
-} from '../../style/theme';
+} from '../../../style/theme';
 
 const styles = {
   borderRadius: theme('corners', {

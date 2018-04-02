@@ -8,7 +8,7 @@ import {
   darkButtonBackgroundColor,
   successColor,
   warningColor,
-} from '../../style/theme';
+} from '../../../style/theme';
 
 const styles = {
   backgroundColor: theme.variants('mode', 'status', {

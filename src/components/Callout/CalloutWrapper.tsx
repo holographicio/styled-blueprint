@@ -1,17 +1,21 @@
 import * as React from 'react';
 import cx from 'classnames';
-import { Button as BPButton, Classes, IButtonProps } from '@blueprintjs/core';
+import {
+  Callout as BPCallout,
+  Classes,
+  ICalloutProps,
+} from '@blueprintjs/core';
 import { omit } from 'lodash';
 import { StatusEnum } from 'js/base';
 
-export interface ButtonProps extends IButtonProps {
+export interface CalloutProps extends ICalloutProps {
   large?: boolean;
   minimal?: boolean;
   outline?: boolean;
   status?: StatusEnum;
 }
 
-const ButtonWrapper: React.StatelessComponent<ButtonProps> = ({
+const CalloutWrapper: React.StatelessComponent<CalloutProps> = ({
   className,
   large,
   minimal,
@@ -23,11 +27,11 @@ const ButtonWrapper: React.StatelessComponent<ButtonProps> = ({
   };
 
   return (
-    <BPButton
+    <BPCallout
       className={cx(className, classNames)}
       {...omit(props, ['outline', 'status'])}
     />
   );
 };
 
-export default ButtonWrapper;
+export default CalloutWrapper;

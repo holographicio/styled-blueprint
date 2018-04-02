@@ -1,5 +1,7 @@
 import * as React from 'react';
-import Navbar from './';
+import NavbarDivider from './';
 import { storiesOf } from '@storybook/react';
 
-storiesOf('Navbar', module).add('default', () => <Navbar>Click Me</Navbar>);
+storiesOf('NavbarDivider', module).add('default', () => (
+  <NavbarDivider>Click Me</NavbarDivider>
+));

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Button from './';
+import ContextMenu from './';
 import { storiesOf } from '@storybook/react';
 
-storiesOf('Button', module).add('default', () => <Button>Click Me</Button>);
+// storiesOf('ContextMenu', module).add('default', () => <ContextMenu>Click Me</ContextMenu>);

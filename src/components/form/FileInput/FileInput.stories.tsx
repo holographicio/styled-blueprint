@@ -1,5 +1,7 @@
 import * as React from 'react';
-import Button from './';
+import FileInput from './';
 import { storiesOf } from '@storybook/react';
 
-storiesOf('Button', module).add('default', () => <Button>Click Me</Button>);
+storiesOf('FileInput', module).add('default', () => (
+  <FileInput>Click Me</FileInput>
+));

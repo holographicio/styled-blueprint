@@ -1,17 +1,18 @@
 import * as React from 'react';
 import cx from 'classnames';
-import { Button as BPButton, Classes, IButtonProps } from '@blueprintjs/core';
+import { Classes } from '@blueprintjs/core';
 import { omit } from 'lodash';
 import { StatusEnum } from 'js/base';
 
-export interface ButtonProps extends IButtonProps {
+export interface InputProps {
+  className?: string;
   large?: boolean;
   minimal?: boolean;
   outline?: boolean;
   status?: StatusEnum;
 }
 
-const ButtonWrapper: React.StatelessComponent<ButtonProps> = ({
+const InputWrapper: React.StatelessComponent<InputProps> = ({
   className,
   large,
   minimal,
@@ -23,11 +24,11 @@ const ButtonWrapper: React.StatelessComponent<ButtonProps> = ({
   };
 
   return (
-    <BPButton
+    <input
       className={cx(className, classNames)}
       {...omit(props, ['outline', 'status'])}
     />
   );
 };
 
-export default ButtonWrapper;
+export default InputWrapper;

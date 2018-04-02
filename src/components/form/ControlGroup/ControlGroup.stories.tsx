@@ -1,5 +1,7 @@
 import * as React from 'react';
-import Button from './';
+import ControlGroup from './';
 import { storiesOf } from '@storybook/react';
 
-storiesOf('Button', module).add('default', () => <Button>Click Me</Button>);
+storiesOf('ControlGroup', module).add('default', () => (
+  <ControlGroup>Click Me</ControlGroup>
+));

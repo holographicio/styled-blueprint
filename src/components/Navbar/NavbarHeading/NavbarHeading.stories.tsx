@@ -1,5 +1,7 @@
 import * as React from 'react';
-import Navbar from './';
+import NavbarHeading from './';
 import { storiesOf } from '@storybook/react';
 
-storiesOf('Navbar', module).add('default', () => <Navbar>Click Me</Navbar>);
+storiesOf('NavbarHeading', module).add('default', () => (
+  <NavbarHeading>Click Me</NavbarHeading>
+));

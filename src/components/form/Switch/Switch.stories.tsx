@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Button from './';
+import Switch from './';
 import { storiesOf } from '@storybook/react';
 
-storiesOf('Button', module).add('default', () => <Button>Click Me</Button>);
+storiesOf('Switch', module).add('default', () => <Switch>Click Me</Switch>);
