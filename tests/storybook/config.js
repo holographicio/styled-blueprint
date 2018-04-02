@@ -4,7 +4,7 @@ const configure = require('@storybook/react').configure;
 const req = require.context('../../src', true, /.stories.tsx$/);
 function loadStories() {
   req.keys().forEach(filename => req(filename));
-  // require('../../src/app/lib/styles.ts');
+  require('../../src/style/styles.ts');
 }
 
 configure(loadStories, module);

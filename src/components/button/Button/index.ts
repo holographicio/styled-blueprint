@@ -10,7 +10,7 @@ import {
   primaryColor1,
   successColor,
   warningColor,
-} from '../../style/theme';
+} from '../../../style/theme';
 export { ButtonProps } from './ButtonWrapper';
 
 const styles = {

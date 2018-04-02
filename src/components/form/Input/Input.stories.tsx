@@ -2,4 +2,4 @@ import * as React from 'react';
 import Input from './';
 import { storiesOf } from '@storybook/react';
 
-storiesOf('Input', module).add('default', () => <Input />);
+storiesOf('Form/Input', module).add('default', () => <Input />);
