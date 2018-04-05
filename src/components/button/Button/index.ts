@@ -12,6 +12,7 @@ import {
   warningColor,
 } from '../../../style/theme';
 export { ButtonProps } from './ButtonWrapper';
+import { Status } from '../../../types/Status';
 
 const styles = {
   backgroundColor: theme.variants('mode', 'status', {
@@ -70,7 +71,7 @@ const Button = styled(ButtonWrapper)`
 `;
 
 Button.defaultProps = {
-  status: 'none',
+  status: Status.NONE,
 };
 
 export default Button;

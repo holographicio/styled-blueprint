@@ -1,16 +1,12 @@
 import * as React from 'react';
-import {
-  Callout as BPCallout,
-  Classes,
-  ICalloutProps,
-} from '@blueprintjs/core';
+import { Callout as BPCallout, ICalloutProps } from '@blueprintjs/core';
 import { omit } from 'lodash';
-import { StatusEnum } from 'js/base';
+import { Status } from '../../types/Status';
 
 export interface CalloutProps extends ICalloutProps {
   large?: boolean;
   outline?: boolean;
-  status?: StatusEnum;
+  status?: Status;
 }
 
 const CalloutWrapper: React.StatelessComponent<CalloutProps> = ({

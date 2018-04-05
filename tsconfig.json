@@ -12,14 +12,10 @@
     "noImplicitThis": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "outDir": "build",
-    "paths": {
-      "@": ["./"],
-      "@/*": ["./*"]
-    },
+    "outDir": "dist",
     "preserveConstEnums": true,
     "removeComments": false,
-    "rootDir": ".",
+    "rootDir": "src",
     "skipLibCheck": true,
     "sourceMap": true,
     "suppressImplicitAnyIndexErrors": true,

@@ -9,6 +9,7 @@ import {
   successColor,
   warningColor,
 } from '../../../style/theme';
+import { Status } from '../../../types/Status';
 
 const styles = {
   backgroundColor: theme.variants('mode', 'status', {
@@ -49,7 +50,7 @@ const InputGroup = styled(InputGroupWrapper)`
 `;
 
 InputGroup.defaultProps = {
-  status: 'none',
+  status: Status.NONE,
 };
 
 export default InputGroup;

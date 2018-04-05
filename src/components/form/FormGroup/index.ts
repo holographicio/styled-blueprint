@@ -9,6 +9,7 @@ import {
   textColor,
   warningColor,
 } from '../../../style/theme';
+import { Status } from '../../../types/Status';
 
 const styles = {
   borderRadius: theme('corners', {
@@ -47,7 +48,7 @@ const FormGroup = styled(FormGroupWrapper)`
 `;
 
 FormGroup.defaultProps = {
-  status: 'none',
+  status: Status.NONE,
 };
 
 export default FormGroup;

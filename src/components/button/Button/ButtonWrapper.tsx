@@ -2,13 +2,13 @@ import * as React from 'react';
 import cx from 'classnames';
 import { Button as BPButton, Classes, IButtonProps } from '@blueprintjs/core';
 import { omit } from 'lodash';
-import { StatusEnum } from 'js/base';
+import { Status } from '../../../types/Status';
 
 export interface ButtonProps extends IButtonProps {
   large?: boolean;
   minimal?: boolean;
   outline?: boolean;
-  status?: StatusEnum;
+  status?: Status;
 }
 
 const ButtonWrapper: React.StatelessComponent<ButtonProps> = ({

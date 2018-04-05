@@ -3,7 +3,6 @@ import {
   black,
   blueGrey400,
   blueGrey700,
-  blueGrey600,
   blueGrey900,
   cyan200,
   cyan400,

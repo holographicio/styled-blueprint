@@ -1,7 +1,7 @@
 import * as React from 'react';
 import cx from 'classnames';
 import { omit } from 'lodash';
-import { StatusEnum } from 'js/base';
+import { Status } from '../../../types/Status';
 import {
   Classes,
   IInputGroupProps,
@@ -10,7 +10,7 @@ import {
 
 interface InputGroupProps extends IInputGroupProps {
   id?: string;
-  status?: StatusEnum;
+  status?: Status;
   large?: boolean;
 }
 

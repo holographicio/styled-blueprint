@@ -1,10 +1,10 @@
 import * as React from 'react';
 import { FormGroup as BPFormGroup, IFormGroupProps } from '@blueprintjs/core';
 import { omit } from 'lodash';
-import { StatusEnum } from 'js/base';
+import { Status } from '../../../types/Status';
 
 interface FormGroupProps extends IFormGroupProps {
-  status?: StatusEnum;
+  status?: Status;
 }
 
 const FormGroupWrapper: React.SFC<FormGroupProps> = props => (
